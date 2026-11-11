@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zerobyte-mcp"
+version = "0.1.0"
+description = "Curated Zerobyte v0.44 MCP adapter for MetaMCP namespace splitting"
+requires-python = ">=3.12"
+dependencies = ["mcp==1.29.0", "httpx==0.28.1", "uvicorn==0.52.1"]
+
+[project.scripts]
+zerobyte-mcp = "zerobyte_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

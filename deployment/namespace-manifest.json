@@ -1,0 +1,21 @@
+{
+  "format": "review manifest, not a MetaMCP import payload",
+  "server": "zerobyte",
+  "transport": "STREAMABLE_HTTP",
+  "url": "http://zerobyte-mcp:8000/mcp",
+  "namespaces": {
+    "zerobyte-read": ["backups_list", "backup_get", "repositories_list", "repository_get", "repository_stats", "volumes_list", "tasks_list", "task_get", "task_history"],
+    "zerobyte-write": ["backup_run", "task_cancel", "repository_stats_refresh", "repository_snapshots_refresh"]
+  },
+  "requirements": [
+    "Attach the same single upstream to both namespaces.",
+    "Persist all 13 discovered tools before classification.",
+    "Set every listed read tool ACTIVE in zerobyte-read and INACTIVE in zerobyte-write.",
+    "Set every listed write tool INACTIVE in zerobyte-read and ACTIVE in zerobyte-write.",
+    "Enable invocation filtering, not merely tools/list filtering.",
+    "Configure authenticated endpoints using the existing service-specific pattern.",
+    "Test direct known write tool names through the read endpoint are denied without executing a real write.",
+    "Test whether read credentials can reach the write endpoint; distinct key names do not prove endpoint-scoped authorization.",
+    "Re-review the complete catalog and mappings before every wrapper upgrade. Unknown/unmapped tools can be allowed by this MetaMCP filter."
+  ]
+}

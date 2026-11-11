@@ -1,0 +1,786 @@
+{
+  "zerobyte_version": "v0.44.0",
+  "revision": "a1b6d0cd623312d4e3be3216c643d8f6943270b9",
+  "source": "https://github.com/nicotsx/zerobyte/blob/a1b6d0cd623312d4e3be3216c643d8f6943270b9/app/client/api-client/sdk.gen.ts",
+  "source_kind": "Generated API SDK at the referenced v0.44.0 revision; not a live API probe",
+  "operation_count": 97,
+  "implemented_count": 13,
+  "operations": [
+    {
+      "operation": "getStatus",
+      "method": "GET",
+      "path": "/api/v1/auth/status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getAdminUsers",
+      "method": "GET",
+      "path": "/api/v1/auth/admin-users",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "deleteUserAccount",
+      "method": "DELETE",
+      "path": "/api/v1/auth/admin-users/{userId}/accounts/{accountId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getUserDeletionImpact",
+      "method": "GET",
+      "path": "/api/v1/auth/deletion-impact/{userId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getOrgMembers",
+      "method": "GET",
+      "path": "/api/v1/auth/org-members",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "updateMemberRole",
+      "method": "PATCH",
+      "path": "/api/v1/auth/org-members/{memberId}/role",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "removeOrgMember",
+      "method": "DELETE",
+      "path": "/api/v1/auth/org-members/{memberId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getApiKeys",
+      "method": "GET",
+      "path": "/api/v1/auth/api-keys",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "createApiKey",
+      "method": "POST",
+      "path": "/api/v1/auth/api-keys",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "deleteApiKey",
+      "method": "DELETE",
+      "path": "/api/v1/auth/api-keys/{keyId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getPublicSsoProviders",
+      "method": "GET",
+      "path": "/api/v1/auth/sso-providers",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getSsoSettings",
+      "method": "GET",
+      "path": "/api/v1/auth/sso-settings",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getUserSsoInvitations",
+      "method": "GET",
+      "path": "/api/v1/auth/sso-invitations",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "startInvitationSsoVerification",
+      "method": "POST",
+      "path": "/api/v1/auth/sso-invitations/{invitationId}/verify",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "deleteSsoProvider",
+      "method": "DELETE",
+      "path": "/api/v1/auth/sso-providers/{providerId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getSsoProviderDetails",
+      "method": "GET",
+      "path": "/api/v1/auth/sso-providers/{providerId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "updateSsoProvider",
+      "method": "PATCH",
+      "path": "/api/v1/auth/sso-providers/{providerId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "checkSsoProviderDiscovery",
+      "method": "GET",
+      "path": "/api/v1/auth/sso-providers/{providerId}/discovery",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "updateSsoProviderAutoLinking",
+      "method": "PATCH",
+      "path": "/api/v1/auth/sso-providers/{providerId}/auto-linking",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "deleteSsoInvitation",
+      "method": "DELETE",
+      "path": "/api/v1/auth/sso-invitations/{invitationId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "listVolumes",
+      "method": "GET",
+      "path": "/api/v1/volumes",
+      "wrapper_tool": "volumes_list",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "createVolume",
+      "method": "POST",
+      "path": "/api/v1/volumes",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "listSourceMachines",
+      "method": "GET",
+      "path": "/api/v1/volumes/source-machines",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "testConnection",
+      "method": "POST",
+      "path": "/api/v1/volumes/test-connection",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "deleteVolume",
+      "method": "DELETE",
+      "path": "/api/v1/volumes/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getVolume",
+      "method": "GET",
+      "path": "/api/v1/volumes/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Detail GET probes mounted storage; initial read catalog uses stored volume listing instead."
+    },
+    {
+      "operation": "updateVolume",
+      "method": "PUT",
+      "path": "/api/v1/volumes/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "mountVolume",
+      "method": "POST",
+      "path": "/api/v1/volumes/{shortId}/mount",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "unmountVolume",
+      "method": "POST",
+      "path": "/api/v1/volumes/{shortId}/unmount",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "healthCheckVolume",
+      "method": "POST",
+      "path": "/api/v1/volumes/{shortId}/health-check",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "listFiles",
+      "method": "GET",
+      "path": "/api/v1/volumes/{shortId}/files",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "browseFilesystem",
+      "method": "GET",
+      "path": "/api/v1/volumes/filesystem/browse",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "listRepositories",
+      "method": "GET",
+      "path": "/api/v1/repositories",
+      "wrapper_tool": "repositories_list",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "createRepository",
+      "method": "POST",
+      "path": "/api/v1/repositories",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "listRcloneRemotes",
+      "method": "GET",
+      "path": "/api/v1/repositories/rclone-remotes",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "deleteRepository",
+      "method": "DELETE",
+      "path": "/api/v1/repositories/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getRepository",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}",
+      "wrapper_tool": "repository_get",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "updateRepository",
+      "method": "PATCH",
+      "path": "/api/v1/repositories/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "getRepositoryStats",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}/stats",
+      "wrapper_tool": "repository_stats",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "refreshRepositoryStats",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/stats/refresh",
+      "wrapper_tool": "repository_stats_refresh",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "deleteSnapshots",
+      "method": "DELETE",
+      "path": "/api/v1/repositories/{shortId}/snapshots",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "listSnapshots",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}/snapshots",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Live Restic repository read with cache/locking work; not assumed passive from GET. Not included in this initial subset."
+    },
+    {
+      "operation": "refreshSnapshots",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/snapshots/refresh",
+      "wrapper_tool": "repository_snapshots_refresh",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "deleteSnapshot",
+      "method": "DELETE",
+      "path": "/api/v1/repositories/{shortId}/snapshots/{snapshotId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getSnapshotDetails",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}/snapshots/{snapshotId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Live Restic repository read with cache/locking work; not assumed passive from GET. Not included in this initial subset."
+    },
+    {
+      "operation": "listSnapshotFiles",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}/snapshots/{snapshotId}/files",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "dumpSnapshot",
+      "method": "GET",
+      "path": "/api/v1/repositories/{shortId}/snapshots/{snapshotId}/dump",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Broad filesystem/content discovery or backup-data download; deliberately outside metadata monitoring."
+    },
+    {
+      "operation": "restoreSnapshot",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/restore",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "startDoctor",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/doctor",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "unlockRepository",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/unlock",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "tagSnapshots",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/snapshots/tag",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "devPanelExec",
+      "method": "POST",
+      "path": "/api/v1/repositories/{shortId}/exec",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Arbitrary Restic execution; deliberately not exposed."
+    },
+    {
+      "operation": "listBackupSchedules",
+      "method": "GET",
+      "path": "/api/v1/backups",
+      "wrapper_tool": "backups_list",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "createBackupSchedule",
+      "method": "POST",
+      "path": "/api/v1/backups",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "deleteBackupSchedule",
+      "method": "DELETE",
+      "path": "/api/v1/backups/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getBackupSchedule",
+      "method": "GET",
+      "path": "/api/v1/backups/{shortId}",
+      "wrapper_tool": "backup_get",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "updateBackupSchedule",
+      "method": "PATCH",
+      "path": "/api/v1/backups/{shortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "getBackupScheduleForVolume",
+      "method": "GET",
+      "path": "/api/v1/backups/volume/{volumeShortId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "runBackupNow",
+      "method": "POST",
+      "path": "/api/v1/backups/{shortId}/run",
+      "wrapper_tool": "backup_run",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "runForget",
+      "method": "POST",
+      "path": "/api/v1/backups/{shortId}/forget",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getScheduleNotifications",
+      "method": "GET",
+      "path": "/api/v1/backups/{shortId}/notifications",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "updateScheduleNotifications",
+      "method": "PUT",
+      "path": "/api/v1/backups/{shortId}/notifications",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "getScheduleMirrors",
+      "method": "GET",
+      "path": "/api/v1/backups/{shortId}/mirrors",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "updateScheduleMirrors",
+      "method": "PUT",
+      "path": "/api/v1/backups/{shortId}/mirrors",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "startMirrorStatus",
+      "method": "POST",
+      "path": "/api/v1/backups/{shortId}/mirrors/{mirrorShortId}/status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "syncMirror",
+      "method": "POST",
+      "path": "/api/v1/backups/{shortId}/mirrors/{mirrorShortId}/sync",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "getMirrorCompatibility",
+      "method": "GET",
+      "path": "/api/v1/backups/{shortId}/mirrors/compatibility",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "reorderBackupSchedules",
+      "method": "POST",
+      "path": "/api/v1/backups/reorder",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Configuration, mounting, testing, schedule/mirror management, or another operation outside the reviewed initial subset."
+    },
+    {
+      "operation": "listNotificationDestinations",
+      "method": "GET",
+      "path": "/api/v1/notifications/destinations",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "createNotificationDestination",
+      "method": "POST",
+      "path": "/api/v1/notifications/destinations",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "deleteNotificationDestination",
+      "method": "DELETE",
+      "path": "/api/v1/notifications/destinations/{id}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Potentially destructive, recovery/repair or cancellation-sensitive operation; not implemented. Future operation-specific wrapper and policy approval required."
+    },
+    {
+      "operation": "getNotificationDestination",
+      "method": "GET",
+      "path": "/api/v1/notifications/destinations/{id}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "updateNotificationDestination",
+      "method": "PATCH",
+      "path": "/api/v1/notifications/destinations/{id}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "testNotificationDestination",
+      "method": "POST",
+      "path": "/api/v1/notifications/destinations/{id}/test",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Notification configuration or outbound message operation; not implemented."
+    },
+    {
+      "operation": "getSystemInfo",
+      "method": "GET",
+      "path": "/api/v1/system/info",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getUpdates",
+      "method": "GET",
+      "path": "/api/v1/system/updates",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getRegistrationStatus",
+      "method": "GET",
+      "path": "/api/v1/system/registration-status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "setRegistrationStatus",
+      "method": "PUT",
+      "path": "/api/v1/system/registration-status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "downloadResticPassword",
+      "method": "POST",
+      "path": "/api/v1/system/restic-password",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getPasswordLoginStatus",
+      "method": "GET",
+      "path": "/api/v1/system/password-login-status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "setPasswordLoginStatus",
+      "method": "PUT",
+      "path": "/api/v1/system/password-login-status",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "exportConfig",
+      "method": "POST",
+      "path": "/api/v1/system/config-export",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "importConfig",
+      "method": "POST",
+      "path": "/api/v1/system/config-import",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "getDevPanel",
+      "method": "GET",
+      "path": "/api/v1/system/dev-panel",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "listTasks",
+      "method": "GET",
+      "path": "/api/v1/tasks",
+      "wrapper_tool": "tasks_list",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "streamTasksEvents",
+      "method": "GET",
+      "path": "/api/v1/tasks/events",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Unbounded SSE stream; replaced by bounded task status/history polling tools."
+    },
+    {
+      "operation": "listTaskHistory",
+      "method": "GET",
+      "path": "/api/v1/tasks/history",
+      "wrapper_tool": "task_history",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "streamTaskEvents",
+      "method": "GET",
+      "path": "/api/v1/tasks/{taskId}/events",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Unbounded SSE stream; replaced by bounded task status/history polling tools."
+    },
+    {
+      "operation": "getTask",
+      "method": "GET",
+      "path": "/api/v1/tasks/{taskId}",
+      "wrapper_tool": "task_get",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "cancelTask",
+      "method": "POST",
+      "path": "/api/v1/tasks/{taskId}/cancel",
+      "wrapper_tool": "task_cancel",
+      "status": "implemented",
+      "note": "Fixed method/path wrapper with projected output."
+    },
+    {
+      "operation": "createDesktopSession",
+      "method": "POST",
+      "path": "/api/v1/desktop/session",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "postApiV1AgentsEnroll",
+      "method": "POST",
+      "path": "/api/v1/agents/enroll",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "deleteRemoteAgent",
+      "method": "DELETE",
+      "path": "/api/v1/agents/{agentId}",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "listAgents",
+      "method": "GET",
+      "path": "/api/v1/agents",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "createRemoteAgent",
+      "method": "POST",
+      "path": "/api/v1/agents",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "rotateRemoteAgentToken",
+      "method": "POST",
+      "path": "/api/v1/agents/{agentId}/token/rotate",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    },
+    {
+      "operation": "revokeRemoteAgentToken",
+      "method": "DELETE",
+      "path": "/api/v1/agents/{agentId}/token",
+      "wrapper_tool": null,
+      "status": "omitted",
+      "note": "Authentication, administration, credential/configuration export, remote-agent enrollment, or nonessential system endpoint; not in this adapter."
+    }
+  ]
+}

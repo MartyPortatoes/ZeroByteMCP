@@ -1,0 +1,36 @@
+# EXAMPLE ONLY. Configure approved credentials and access before deployment.
+# Build a reviewed image and pin its digest before production deployment.
+services:
+  zerobyte-mcp:
+    image: local/zerobyte-mcp:0.1.0
+    container_name: zerobyte-mcp
+    restart: unless-stopped
+    environment:
+      ZEROBYTE_BASE_URL: ${ZEROBYTE_BASE_URL:?Set an approved ZeroByte origin}
+      # Plain HTTP carries the API key in cleartext.
+      # Prefer a verified TLS/internal encrypted route. Do not silently enable.
+      ZEROBYTE_ALLOW_INSECURE_HTTP: ${ZEROBYTE_ALLOW_INSECURE_HTTP:-false}
+      ZEROBYTE_API_KEY_FILE: /run/secrets/zerobyte_api_key
+      MCP_BEARER_TOKEN_FILE: /run/secrets/zerobyte_mcp_bearer
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8000"
+      MCP_ALLOWED_HOSTS: zerobyte-mcp:8000
+    secrets:
+      - zerobyte_api_key
+      - zerobyte_mcp_bearer
+    networks: [metamcp-network]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 256m
+    # Intentionally no host ports, Docker socket, backup-volume mounts or SYS_ADMIN.
+networks:
+  metamcp-network:
+    external: true
+secrets:
+  zerobyte_api_key:
+    file: ${ZEROBYTE_API_KEY_SECRET_FILE:?Set approved secret path}
+  zerobyte_mcp_bearer:
+    file: ${MCP_BEARER_SECRET_FILE:?Set approved secret path}
